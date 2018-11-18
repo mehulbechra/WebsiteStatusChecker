@@ -26,9 +26,9 @@ httpsServer.listen(config.httpsPort, () => console.log("The server is listening 
 const unifiedServer = (req,res) => {
 
     // Get parsed url and trim it
-    const parsedUrl = url.parse(req.url, true);           // true = calling query string module
+    const parsedUrl = url.parse(req.url, true);             // true = calling query string module
     const path = parsedUrl.pathname;
-    const trimmedPath = path.replace(/^\/+|\/+$/g,'');     // Removing / from beg and end
+    const trimmedPath = path.replace(/^\/+|\/+$/g,'');      // Removing / from beg and end
     // Get query string as an object
     const queryStringObject = parsedUrl.query;
 
