@@ -3,7 +3,7 @@
 */
 
 // Container for all environments
-var environments = {};
+const environments = {};
 
 // Staging (default) environment
 environments.staging = {
@@ -20,10 +20,10 @@ environments.production = {
 };
 
 // Find which environment was passed as an argument
-var currentEnvironment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
+const currentEnvironment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
 
 // Check that current environment is one of the environments above, if not, default to staging
-var environmentToExport = typeof(environments[currentEnvironment]) == 'object' ? environments[currentEnvironment] : environments.staging;
+const environmentToExport = typeof(environments[currentEnvironment]) == 'object' ? environments[currentEnvironment] : environments.staging;
 
 // Export the module
 module.exports = environmentToExport;
