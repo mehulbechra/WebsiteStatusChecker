@@ -12,6 +12,11 @@ const fs = require('fs');
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
 
+// TODO: DELETE THIS
+helpers.sendTwilioSms('9924165620','Hello!',(err) => {
+    console.log('This was the error:',err);
+});
+
 // Instantiate & start http
 const httpServer = http.createServer((req, res) => unifiedServer(req,res));
 httpServer.listen(config.httpPort, () => console.log("The server is listening on port "+config.httpPort));
