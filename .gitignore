@@ -1,2 +1,5 @@
-/.data
+/.data/checks/
+/.data/test/
+/.data/tokens/
+/.data/users/
 /.logs
