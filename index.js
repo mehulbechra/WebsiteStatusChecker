@@ -11,9 +11,9 @@ const app = {};
 
 // Init function
 app.init = () => {
-    // Starting server and background workers
-    server.init();
-    workers.init();
+  // Starting server and background workers
+  server.init();
+  workers.init();
 };
 
 // Execute
