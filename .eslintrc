@@ -9,7 +9,8 @@
 		"no-unused-vars": [1,{ "argsIgnorePattern": "err"}],
 		"no-param-reassign":0,
 		"no-underscore-dangle":0,
-		"max-len":0
+		"max-len":0,
+		"linebreak-style": 0
 	},
 	"plugins":["html"]
 }
